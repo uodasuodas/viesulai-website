@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-olive: #1a2315;
+  --color-olive-light: #2a3625;
+  --color-dark: #0d0f0c;
+  --color-dark-light: #181a17;
+  --color-sand: #c4a55a;
+  --color-sand-dark: #a68c42;
+  --color-sand-light: #d4b96e;
+  --color-bone: #e8e5df;
+  --color-bone-dim: #b8b5af;
+  --font-display: var(--font-oswald);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}

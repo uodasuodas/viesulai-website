@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "About us",
+    "mission": "Mission",
+    "join": "Join us",
+    "support": "Support",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Viesulai",
+    "subheadline": "Third GSK squad of the Lithuanian Riflemen's Union",
+    "cta": "Join us"
+  },
+  "about": {
+    "title": "About us",
+    "p1": "\"Viesulai\" is the third squad of the Lithuanian Riflemen's Union, uniting motivated citizens from across Lithuania who are committed to strengthening the country's defense capability and civic awareness.",
+    "p2": "Our squad is part of the Lithuanian Riflemen's Union – a voluntary paramilitary civic self-defense organization active since 1919. The Riflemen's Union is one of the oldest and largest defense organizations in Lithuania.",
+    "p3": "We bring together people of various professions and backgrounds, united by a shared value – the determination to defend our country and community."
+  },
+  "mission": {
+    "title": "Mission and goals",
+    "subtitle": "What we strive for",
+    "goal1": {
+      "title": "Defense readiness",
+      "description": "We develop our members' military and tactical competencies to be prepared to act in critical situations."
+    },
+    "goal2": {
+      "title": "Community",
+      "description": "We build a strong and unified community where every member feels valued and needed."
+    },
+    "goal3": {
+      "title": "Civic education",
+      "description": "We strengthen civic awareness and patriotism, encouraging active participation in national defense."
+    }
+  },
+  "join": {
+    "title": "How to join",
+    "subtitle": "Join our team",
+    "step1": {
+      "number": "01",
+      "title": "Become a rifleman",
+      "description": "The first step is to become a member of the Lithuanian Riflemen's Union. Register through the official website."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Contact us",
+      "description": "Write us an email or call – we'll answer all your questions about our squad's activities."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Submit a transfer request",
+      "description": "Fill out a transfer request at your regiment to officially join the Viesulai squad."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Start your journey",
+      "description": "Participate in exercises, training sessions, and squad events together with the team."
+    },
+    "cta": "Become a rifleman",
+    "ctaUrl": "https://www.sauliusajunga.lt/tapk-sauliu/"
+  },
+  "support": {
+    "title": "Support the squad",
+    "subtitle": "Your support helps us strengthen our defense readiness",
+    "gpm": {
+      "title": "1.2% income tax support",
+      "description": "When filing your annual income tax declaration, you can allocate 1.2% of your paid personal income tax to our squad. Search for company code 307633723 or the name \"Trečiasis būrys\" in the recipient search."
+    },
+    "transfer": {
+      "title": "Bank transfer",
+      "description": "Transfer your support to VšĮ TREČIASIS BŪRYS bank account LT727300010201946164. Payment purpose: PARAMA (Support)."
+    },
+    "business": {
+      "title": "Business support",
+      "description": "If you represent a business and wish to contribute to our activities – we can arrange individual agreements. Support can be both financial and material."
+    }
+  },
+  "video": {
+    "title": "Our activities"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "placeholder": "Photos will be added soon."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Questions, suggestions – write to us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Error sending. Please try again."
+    },
+    "info": {
+      "company": "Trečiasis būrys, VšĮ",
+      "code": "Company code: 307633723",
+      "address": "Algirdo g. 85-76, LT-03209 Vilnius",
+      "phone": "+370 656 96055",
+      "email": "info@viesulai.lt"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "lss": "Lithuanian Riflemen's Union"
+  }
+}

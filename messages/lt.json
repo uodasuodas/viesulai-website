@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "Kas mes",
+    "mission": "Misija",
+    "join": "Tapk nariu",
+    "support": "Paremk",
+    "gallery": "Galerija",
+    "contact": "Kontaktai"
+  },
+  "hero": {
+    "headline": "Viesulai",
+    "subheadline": "Lietuvos \u0161auli\u0173 s\u0105jungos GSK tre\u010Diasis b\u016brys",
+    "cta": "Tapk nariu"
+  },
+  "about": {
+    "title": "Kas mes",
+    "p1": "\u201EViesulai\u201C \u2013 tai Lietuvos \u0161auli\u0173 s\u0105jungos tre\u010Diasis b\u016brys, vienijantis motyvuotus pilie\u010Dius i\u0161 visos Lietuvos, pasiry\u017Eusius stiprinti \u0161alies gynybin\u012F paj\u0117gum\u0105 ir pilietin\u012F s\u0105moningum\u0105.",
+    "p2": "M\u016Bs\u0173 b\u016brys yra Lietuvos \u0161auli\u0173 s\u0105jungos dalis \u2013 savanori\u0161kos sukarintos pilietin\u0117s savigynos organizacijos, veikian\u010Dios nuo 1919 met\u0173. \u0160auli\u0173 s\u0105junga yra viena seniausi\u0173 ir did\u017Eiausi\u0173 Lietuvos gynybini\u0173 organizacij\u0173.",
+    "p3": "B\u016bryje telkiame \u012Fvairi\u0173 profesij\u0173 ir patir\u010Di\u0173 \u017Emones, kuriuos jungia bendra vertyb\u0117 \u2013 pasiry\u017Eimas ginti savo kra\u0161t\u0105 ir bendruomen\u0119."
+  },
+  "mission": {
+    "title": "Misija ir tikslai",
+    "subtitle": "K\u0105 mes siekiame",
+    "goal1": {
+      "title": "Gynybinis pasirengimas",
+      "description": "Ugdome nari\u0173 karines ir taktines kompetencijas, kad b\u016btume pasireng\u0119 veikti kritin\u0117mis situacijomis."
+    },
+    "goal2": {
+      "title": "Bendruomeni\u0161kumas",
+      "description": "Kuriame tvirt\u0105 ir viening\u0105 bendruomen\u0119, kurioje kiekvienas narys jau\u010Diasi vertinamas ir reikalingas."
+    },
+    "goal3": {
+      "title": "Pilietinis ugdymas",
+      "description": "Stipriname pilietin\u0119 savimon\u0119 ir patriotizm\u0105, skatindami aktyv\u0173 dalyvavim\u0105 \u0161alies gynyboje."
+    }
+  },
+  "join": {
+    "title": "Kaip tapti nariu",
+    "subtitle": "Prisijunk prie m\u016Bs\u0173 komandos",
+    "step1": {
+      "number": "01",
+      "title": "Tapk \u0161auliu",
+      "description": "Pirmas \u017Eingsnis \u2013 tapti Lietuvos \u0161auli\u0173 s\u0105jungos nariu. U\u017Esiregistruok per oficiali\u0105 svetain\u0119."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Susisiek su mumis",
+      "description": "Para\u0161yk mums el. pa\u0161tu arba paskambink \u2013 atsakysime \u012F visus klausimus apie b\u016brio veikl\u0105."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Pateik perk\u0117limo pra\u0161ym\u0105",
+      "description": "U\u017Epildyk perk\u0117limo pra\u0161ym\u0105 savo rinktin\u0117je, kad oficialiai prisijungtum prie \u201EViesul\u0173\u201C b\u016brio."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Prad\u0117k veikl\u0105",
+      "description": "Dalyvuok pratybose, mokymosi u\u017Esi\u0117mimuose ir b\u016brio renginiuose kartu su komanda."
+    },
+    "cta": "Tapk \u0161auliu",
+    "ctaUrl": "https://www.sauliusajunga.lt/tapk-sauliu/"
+  },
+  "support": {
+    "title": "Paremk b\u016br\u012F",
+    "subtitle": "Tavo parama padeda mums stiprinti gynybin\u012F pasirengim\u0105",
+    "gpm": {
+      "title": "1,2% GPM parama",
+      "description": "Teikdami metin\u0119 pajam\u0173 mokes\u010Dio deklaracij\u0105 VMI, galite skirti 1,2% nuo sumok\u0117to gyventoj\u0173 pajam\u0173 mokes\u010Dio m\u016Bs\u0173 b\u016briui. Gav\u0117jo paie\u0161koje \u012Fveskite \u012Fmon\u0117s kod\u0105 307633723 arba pavadinim\u0105 \u201ETre\u010Diasis b\u016brys\u201C."
+    },
+    "transfer": {
+      "title": "Parama pavedimu",
+      "description": "Perveskite param\u0105 \u012F V\u0160\u012E TRE\u010CIASIS B\u016aRYS banko s\u0105skait\u0105 LT727300010201946164. Mok\u0117jimo paskirtis: PARAMA."
+    },
+    "business": {
+      "title": "Verslo parama",
+      "description": "Jeigu atstovaujate verslui ir norite prisid\u0117ti prie m\u016Bs\u0173 veikl\u0173 \u2013 galima derinti atskiru susitarimu. Parama gali b\u016bti tiek finansin\u0117, tiek materialin\u0117."
+    }
+  },
+  "video": {
+    "title": "M\u016Bs\u0173 veikla"
+  },
+  "gallery": {
+    "title": "Galerija",
+    "placeholder": "Nuotraukos bus prid\u0117tos netrukus."
+  },
+  "contact": {
+    "title": "Susisiekite",
+    "subtitle": "Klausimai, pasi\u016blymai \u2013 para\u0161ykite mums",
+    "form": {
+      "name": "Vardas",
+      "email": "El. pa\u0161tas",
+      "phone": "Telefonas (neprivaloma)",
+      "message": "\u017Dinut\u0117",
+      "submit": "Si\u0173sti",
+      "success": "\u017Dinut\u0117 i\u0161si\u0173sta! Susisieksime artimiausiu metu.",
+      "error": "Klaida siun\u010Diant. Bandykite dar kart\u0105."
+    },
+    "info": {
+      "company": "Tre\u010Diasis b\u016brys, V\u0161\u012E",
+      "code": "\u012Emon\u0117s kodas: 307633723",
+      "address": "Algirdo g. 85-76, LT-03209 Vilnius",
+      "phone": "+370 656 96055",
+      "email": "info@viesulai.lt"
+    }
+  },
+  "footer": {
+    "rights": "Visos teis\u0117s saugomos.",
+    "lss": "Lietuvos \u0161auli\u0173 s\u0105junga"
+  }
+}
