@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 // Replace with your Web3Forms access key after registering at https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+const WEB3FORMS_ACCESS_KEY = "96e77900-da51-4a15-b013-1e0a9ddb5cc7";
 
 export function Contact() {
   const t = useTranslations("contact");

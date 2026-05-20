@@ -9,7 +9,7 @@
   },
   "hero": {
     "headline": "Viesulai",
-    "subheadline": "Lietuvos \u0161auli\u0173 s\u0105jungos GSK tre\u010Diasis b\u016brys",
+    "subheadline": "Garb\u0117s sargybos kuopos tre\u010Diasis b\u016brys",
     "cta": "Tapk nariu"
   },
   "about": {
@@ -20,7 +20,7 @@
   },
   "mission": {
     "title": "Misija ir tikslai",
-    "subtitle": "K\u0105 mes siekiame",
+    "subtitle": "Ko mes siekiame",
     "goal1": {
       "title": "Gynybinis pasirengimas",
       "description": "Ugdome nari\u0173 karines ir taktines kompetencijas, kad b\u016btume pasireng\u0119 veikti kritin\u0117mis situacijomis."
@@ -100,7 +100,7 @@
       "code": "\u012Emon\u0117s kodas: 307633723",
       "address": "Algirdo g. 85-76, LT-03209 Vilnius",
       "phone": "+370 656 96055",
-      "email": "info@viesulai.lt"
+      "email": "tevyneslabui@treciasisburys.lt"
     }
   },
   "footer": {
