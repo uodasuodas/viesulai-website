@@ -6,38 +6,18 @@ import { useTranslations } from "next-intl";
 
 const WEB3FORMS_ACCESS_KEY = "96e77900-da51-4a15-b013-1e0a9ddb5cc7";
 
-const activityKeys = [
-  "tactical",
-  "shooting",
-  "medical",
-  "comms",
-  "cyber",
-  "other",
-] as const;
-
 export function ContactForm({ standalone = false }: { standalone?: boolean }) {
   const t = useTranslations("contact");
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
-  const [selectedActivities, setSelectedActivities] = useState<string[]>([]);
-
-  const toggleActivity = (key: string) => {
-    setSelectedActivities((prev) =>
-      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
-    );
-  };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
     const form = e.currentTarget;
     const get = (name: string) =>
-      (form.elements.namedItem(name) as HTMLInputElement)?.value || "";
-
-    const activitiesText = selectedActivities
-      .map((k) => t(`form.activitiesOptions.${k}`))
-      .join(", ");
+      (form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement)?.value || "";
 
     const payload = {
       access_key: WEB3FORMS_ACCESS_KEY,
@@ -48,7 +28,7 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
       phone: get("phone"),
       "Dabartine kuopa": get("company"),
       "Laikas per menesi": get("time"),
-      "Dominancios veiklos": activitiesText,
+      "Dominancios veiklos": get("activities"),
       message: get("message"),
     };
 
@@ -65,7 +45,6 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
       if (res.ok && data.success) {
         setStatus("success");
         form.reset();
-        setSelectedActivities([]);
       } else {
         setStatus("error");
       }
@@ -106,42 +85,18 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
         placeholder={t("form.company")}
         className={inputClass}
       />
-
-      <div>
-        <label className="block text-bone/60 text-sm mb-2">
-          {t("form.time")}
-        </label>
-        <select name="time" required className={`${inputClass} appearance-none`}>
-          <option value="">{t("form.timeOptions.placeholder")}</option>
-          <option value="iki4">{t("form.timeOptions.opt1")}</option>
-          <option value="4-10">{t("form.timeOptions.opt2")}</option>
-          <option value="10-20">{t("form.timeOptions.opt3")}</option>
-          <option value="20+">{t("form.timeOptions.opt4")}</option>
-        </select>
-      </div>
-
-      <div>
-        <label className="block text-bone/60 text-sm mb-3">
-          {t("form.activities")}
-        </label>
-        <div className="grid grid-cols-2 gap-2">
-          {activityKeys.map((key) => (
-            <button
-              key={key}
-              type="button"
-              onClick={() => toggleActivity(key)}
-              className={`px-3 py-2 text-sm border transition-colors text-left ${
-                selectedActivities.includes(key)
-                  ? "border-sand bg-sand/15 text-sand"
-                  : "border-bone/10 text-bone/50 hover:border-bone/30"
-              }`}
-            >
-              {t(`form.activitiesOptions.${key}`)}
-            </button>
-          ))}
-        </div>
-      </div>
-
+      <input
+        type="text"
+        name="time"
+        placeholder={t("form.time")}
+        className={inputClass}
+      />
+      <input
+        type="text"
+        name="activities"
+        placeholder={t("form.activities")}
+        className={inputClass}
+      />
       <textarea
         name="message"
         placeholder={t("form.message")}
