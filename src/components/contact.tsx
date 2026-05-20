@@ -59,6 +59,7 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
 
   const formContent = (
     <form onSubmit={handleSubmit} className="space-y-5">
+      <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
       <input
         type="text"
         name="name"
