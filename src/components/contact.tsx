@@ -29,6 +29,7 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
       "Dabartine kuopa": get("company"),
       "Laikas per menesi": get("time"),
       "Dominancios veiklos": get("activities"),
+      "Kompetencijos ir igudziai": get("skills"),
       message: get("message"),
     };
 
@@ -95,6 +96,12 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
         type="text"
         name="activities"
         placeholder={t("form.activities")}
+        className={inputClass}
+      />
+      <input
+        type="text"
+        name="skills"
+        placeholder={t("form.skills")}
         className={inputClass}
       />
       <textarea

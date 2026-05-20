@@ -93,6 +93,7 @@
       "company": "Current company (if you are a rifleman)",
       "time": "How much time can you dedicate per month?",
       "activities": "What activities interest you?",
+      "skills": "Military-related competencies, experience, or other useful skills",
       "message": "Additional information (optional)",
       "submit": "Send",
       "success": "Thank you! We'll get in touch soon.",
