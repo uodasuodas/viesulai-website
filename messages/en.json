@@ -87,12 +87,30 @@
     "title": "Get in touch",
     "subtitle": "Questions, suggestions – write to us",
     "form": {
-      "name": "Name",
+      "name": "Full name",
       "email": "Email",
-      "phone": "Phone (optional)",
-      "message": "Message",
+      "phone": "Phone number",
+      "company": "Current company (if you are a rifleman)",
+      "time": "How much time can you dedicate per month?",
+      "timeOptions": {
+        "placeholder": "Select...",
+        "opt1": "Up to 4 hours",
+        "opt2": "4\u201310 hours",
+        "opt3": "10\u201320 hours",
+        "opt4": "More than 20 hours"
+      },
+      "activities": "What activities interest you?",
+      "activitiesOptions": {
+        "tactical": "Tactical training",
+        "shooting": "Shooting",
+        "medical": "Tactical medicine",
+        "comms": "Communications",
+        "cyber": "Cybersecurity",
+        "other": "Other"
+      },
+      "message": "Additional information (optional)",
       "submit": "Send",
-      "success": "Message sent! We'll get back to you soon.",
+      "success": "Thank you! We'll get in touch soon.",
       "error": "Error sending. Please try again."
     },
     "info": {

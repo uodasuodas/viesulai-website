@@ -87,12 +87,30 @@
     "title": "Susisiekite",
     "subtitle": "Klausimai, pasi\u016blymai \u2013 para\u0161ykite mums",
     "form": {
-      "name": "Vardas",
+      "name": "Vardas, pavard\u0117",
       "email": "El. pa\u0161tas",
-      "phone": "Telefonas (neprivaloma)",
-      "message": "\u017Dinut\u0117",
+      "phone": "Tel. nr.",
+      "company": "Dabartin\u0117 kuopa (jei esate \u0161aulys)",
+      "time": "Kiek laiko galite skirti \u0161auliams per m\u0117nes\u012F?",
+      "timeOptions": {
+        "placeholder": "Pasirinkite...",
+        "opt1": "Iki 4 val.",
+        "opt2": "4\u201310 val.",
+        "opt3": "10\u201320 val.",
+        "opt4": "Daugiau nei 20 val."
+      },
+      "activities": "Kokios veiklos domina?",
+      "activitiesOptions": {
+        "tactical": "Taktinis rengimas",
+        "shooting": "\u0160audymas",
+        "medical": "Taktin\u0117 medicina",
+        "comms": "Ry\u0161iai",
+        "cyber": "Kibernetinis saugumas",
+        "other": "Kita"
+      },
+      "message": "Papildoma informacija (neprivaloma)",
       "submit": "Si\u0173sti",
-      "success": "\u017Dinut\u0117 i\u0161si\u0173sta! Susisieksime artimiausiu metu.",
+      "success": "A\u010Di\u016b! Susisieksime artimiausiu metu.",
       "error": "Klaida siun\u010Diant. Bandykite dar kart\u0105."
     },
     "info": {
