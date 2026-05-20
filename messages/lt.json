@@ -5,7 +5,7 @@
     "join": "Tapk nariu",
     "support": "Paremk",
     "gallery": "Galerija",
-    "contact": "Kontaktai"
+    "contact": "Anketa"
   },
   "hero": {
     "headline": "Viesulai",
@@ -84,8 +84,8 @@
     "placeholder": "Nuotraukos bus prid\u0117tos netrukus."
   },
   "contact": {
-    "title": "Susisiekite",
-    "subtitle": "Klausimai, pasi\u016blymai \u2013 para\u0161ykite mums",
+    "title": "Tapk Viesulu nariu",
+    "subtitle": "U\u017Epildyk anket\u0105 ir mes susisieksime su tavimi",
     "form": {
       "name": "Vardas, pavard\u0117",
       "email": "El. pa\u0161tas",

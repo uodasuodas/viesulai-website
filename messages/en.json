@@ -5,7 +5,7 @@
     "join": "Join us",
     "support": "Support",
     "gallery": "Gallery",
-    "contact": "Contact"
+    "contact": "Apply"
   },
   "hero": {
     "headline": "Viesulai",
@@ -84,8 +84,8 @@
     "placeholder": "Photos will be added soon."
   },
   "contact": {
-    "title": "Get in touch",
-    "subtitle": "Questions, suggestions – write to us",
+    "title": "Join the Viesulai squad",
+    "subtitle": "Fill out the form and we will get in touch with you",
     "form": {
       "name": "Full name",
       "email": "Email",
