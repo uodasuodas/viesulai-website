@@ -169,15 +169,6 @@ export function ContactForm({ standalone = false }: { standalone?: boolean }) {
             </h3>
             <div className="space-y-3 text-bone/60 text-lg">
               <p>{t("info.code")}</p>
-              <p>{t("info.address")}</p>
-              <p>
-                <a
-                  href={`tel:${t("info.phone").replace(/\s/g, "")}`}
-                  className="hover:text-sand transition-colors"
-                >
-                  {t("info.phone")}
-                </a>
-              </p>
               <p>
                 <a
                   href={`mailto:${t("info.email")}`}
