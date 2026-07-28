@@ -30,7 +30,7 @@ export function Video() {
           className="relative w-full aspect-video"
         >
           <iframe
-            src="https://www.youtube.com/embed/eFhR6Xz3n2w"
+            src="https://www.youtube.com/embed/fRrwG769I0I"
             title="Viesulai"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
