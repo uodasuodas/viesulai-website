@@ -1,3 +1,5 @@
+import { existsSync, readdirSync } from "fs";
+import { join } from "path";
 import { setRequestLocale } from "next-intl/server";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
@@ -10,6 +12,14 @@ import { Gallery } from "@/components/gallery";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
+// Drop jpg/png/webp files into public/images/gallery — they are listed at build time, sorted by name
+const GALLERY_DIR = "images/gallery";
+const galleryPath = join(process.cwd(), "public", GALLERY_DIR);
+const galleryPhotos = (existsSync(galleryPath) ? readdirSync(galleryPath) : [])
+  .filter((f) => /\.(jpe?g|png|webp)$/i.test(f))
+  .sort()
+  .map((f) => `/${GALLERY_DIR}/${f}`);
+
 export default async function HomePage({
   params,
 }: {
@@ -20,7 +30,7 @@ export default async function HomePage({
 
   return (
     <>
-      <Header />
+      <Header hasGallery={galleryPhotos.length > 0} />
       <main>
         <Hero />
         <About />
@@ -28,7 +38,7 @@ export default async function HomePage({
         <Join />
         <Support />
         <Video />
-        <Gallery />
+        {galleryPhotos.length > 0 && <Gallery photos={galleryPhotos} />}
         <Contact />
       </main>
       <Footer />

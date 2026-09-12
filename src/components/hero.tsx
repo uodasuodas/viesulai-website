@@ -20,6 +20,22 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/40" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center mb-8"
+        >
+          <Image
+            src="/images/logo-white.png"
+            alt="Viesulai logo"
+            width={334}
+            height={441}
+            priority
+            className="h-32 md:h-40 w-auto"
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

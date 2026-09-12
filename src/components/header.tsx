@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { LanguageSwitcher } from "./language-switcher";
 
 const navLinks = [
@@ -13,10 +14,11 @@ const navLinks = [
   { href: "#contact", key: "contact" },
 ] as const;
 
-export function Header() {
+export function Header({ hasGallery }: { hasGallery: boolean }) {
   const t = useTranslations("nav");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const links = hasGallery ? navLinks : navLinks.filter((l) => l.key !== "gallery");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -35,13 +37,20 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="font-display text-bone text-2xl tracking-[0.15em] uppercase"
+          className="flex items-center gap-3 font-display text-bone text-2xl tracking-[0.15em] uppercase"
         >
+          <Image
+            src="/images/logo-white.png"
+            alt="Viesulai logo"
+            width={334}
+            height={441}
+            className="h-10 w-auto"
+          />
           Viesulai
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <a
               key={link.key}
               href={link.href}
@@ -81,7 +90,7 @@ export function Header() {
       {menuOpen && (
         <div className="md:hidden bg-dark/95 backdrop-blur-sm border-t border-bone/10">
           <div className="px-6 py-6 flex flex-col gap-5">
-            {navLinks.map((link) => (
+            {links.map((link) => (
               <a
                 key={link.key}
                 href={link.href}

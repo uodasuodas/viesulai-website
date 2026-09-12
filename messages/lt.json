@@ -74,14 +74,21 @@
     "business": {
       "title": "Verslo parama",
       "description": "Jeigu atstovaujate verslui ir norite prisid\u0117ti prie m\u016Bs\u0173 veikl\u0173 \u2013 galima derinti atskiru susitarimu. Parama gali b\u016bti tiek finansin\u0117, tiek materialin\u0117."
+    },
+    "details": {
+      "title": "Rekvizitai",
+      "recipient": { "label": "Gav\u0117jas", "value": "V\u0161\u012E Tre\u010Diasis b\u016brys" },
+      "code": { "label": "Juridinio asmens kodas", "value": "307633723" },
+      "iban": { "label": "Banko s\u0105skaita", "value": "LT727300010201946164" },
+      "type": { "label": "Gav\u0117jo tipas", "value": "Paramos gav\u0117jas" },
+      "purpose": { "label": "Mok\u0117jimo paskirtis", "value": "PARAMA" }
     }
   },
   "video": {
     "title": "M\u016Bs\u0173 veikla"
   },
   "gallery": {
-    "title": "Galerija",
-    "placeholder": "Nuotraukos bus prid\u0117tos netrukus."
+    "title": "Galerija"
   },
   "contact": {
     "title": "Tapk Viesul\u0173 nariu",

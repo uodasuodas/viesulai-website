@@ -74,14 +74,21 @@
     "business": {
       "title": "Business support",
       "description": "If you represent a business and wish to contribute to our activities – we can arrange individual agreements. Support can be both financial and material."
+    },
+    "details": {
+      "title": "Payment details",
+      "recipient": { "label": "Recipient", "value": "VšĮ Trečiasis būrys" },
+      "code": { "label": "Legal entity code", "value": "307633723" },
+      "iban": { "label": "Bank account", "value": "LT727300010201946164" },
+      "type": { "label": "Recipient type", "value": "Charity recipient (paramos gavėjas)" },
+      "purpose": { "label": "Payment purpose", "value": "PARAMA" }
     }
   },
   "video": {
     "title": "Our activities"
   },
   "gallery": {
-    "title": "Gallery",
-    "placeholder": "Photos will be added soon."
+    "title": "Gallery"
   },
   "contact": {
     "title": "Join the Viesulai squad",

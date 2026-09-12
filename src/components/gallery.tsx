@@ -1,14 +1,25 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-// Add photos here: { src: "/images/gallery/photo1.jpg", alt: "description" }
-const photos: { src: string; alt: string }[] = [];
-
-export function Gallery() {
+// Photo paths are collected from public/images/gallery at build time (see page.tsx)
+export function Gallery({ photos }: { photos: string[] }) {
   const t = useTranslations("gallery");
+  const [active, setActive] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (active === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setActive(null);
+      if (e.key === "ArrowRight") setActive((active + 1) % photos.length);
+      if (e.key === "ArrowLeft") setActive((active - 1 + photos.length) % photos.length);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [active, photos.length]);
 
   return (
     <section id="gallery" className="py-24 md:py-32 bg-dark">
@@ -26,38 +37,43 @@ export function Gallery() {
           <div className="w-16 h-0.5 bg-sand mx-auto mt-6" />
         </motion.div>
 
-        {photos.length > 0 ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {photos.map((photo, i) => (
-              <motion.div
-                key={photo.src}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+          {photos.map((src, i) => (
+              <motion.button
+                key={src}
+                type="button"
+                onClick={() => setActive(i)}
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="relative aspect-[4/3] overflow-hidden group"
+                transition={{ duration: 0.5, delay: (i % 6) * 0.08 }}
+                className="relative aspect-[4/3] overflow-hidden group cursor-pointer"
               >
                 <Image
-                  src={photo.src}
-                  alt={photo.alt}
+                  src={src}
+                  alt=""
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
-              </motion.div>
+              </motion.button>
             ))}
-          </div>
-        ) : (
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center text-bone/40 text-lg"
-          >
-            {t("placeholder")}
-          </motion.p>
-        )}
+        </div>
       </div>
+
+      {active !== null && (
+        <div
+          onClick={() => setActive(null)}
+          className="fixed inset-0 z-[60] bg-dark/95 flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
+        >
+          <div className="relative w-full h-full">
+            <Image src={photos[active]} alt="" fill className="object-contain" sizes="100vw" />
+          </div>
+          <span className="absolute bottom-4 text-bone/50 text-sm tracking-widest">
+            {active + 1} / {photos.length}
+          </span>
+        </div>
+      )}
     </section>
   );
 }

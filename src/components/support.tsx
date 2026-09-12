@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 const methods = ["gpm", "transfer", "business"] as const;
+const details = ["recipient", "code", "iban", "type", "purpose"] as const;
 
 export function Support() {
   const t = useTranslations("support");
@@ -44,6 +45,28 @@ export function Support() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+          className="mt-12 border border-sand/30 p-8 max-w-2xl mx-auto"
+        >
+          <h3 className="font-display text-xl text-bone mb-6 uppercase tracking-wide">
+            {t("details.title")}
+          </h3>
+          <dl className="space-y-2 text-lg">
+            {details.map((key) => (
+              <div key={key} className="flex flex-col sm:flex-row sm:gap-2">
+                <dt className="text-bone/50 sm:w-56 shrink-0">{t(`details.${key}.label`)}:</dt>
+                <dd className="text-bone font-semibold break-all select-all">
+                  {t(`details.${key}.value`)}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -10,6 +11,13 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col items-center md:items-start gap-1">
+            <Image
+              src="/images/logo-white.png"
+              alt="Viesulai logo"
+              width={334}
+              height={441}
+              className="h-12 w-auto mb-1"
+            />
             <span className="font-display text-bone text-xl tracking-[0.15em] uppercase">
               Viesulai
             </span>
