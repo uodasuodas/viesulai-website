@@ -51,7 +51,7 @@ export function Gallery({ photos }: { photos: string[] }) {
               >
                 <Image
                   src={src}
-                  alt=""
+                  alt={t("photoAlt", { n: i + 1 })}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 33vw"
@@ -67,7 +67,7 @@ export function Gallery({ photos }: { photos: string[] }) {
           className="fixed inset-0 z-[60] bg-dark/95 flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
         >
           <div className="relative w-full h-full">
-            <Image src={photos[active]} alt="" fill className="object-contain" sizes="100vw" />
+            <Image src={photos[active]} alt={t("photoAlt", { n: active + 1 })} fill className="object-contain" sizes="100vw" />
           </div>
           <span className="absolute bottom-4 text-bone/50 text-sm tracking-widest">
             {active + 1} / {photos.length}

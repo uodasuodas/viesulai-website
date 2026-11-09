@@ -2,6 +2,7 @@
   "nav": {
     "about": "Kas mes",
     "mission": "Misija",
+    "programs": "Veikla",
     "join": "Tapk nariu",
     "support": "Paremk",
     "gallery": "Galerija",
@@ -16,7 +17,59 @@
     "title": "Kas mes",
     "p1": "\u201EViesulai\u201C \u2013 tai Lietuvos \u0161auli\u0173 s\u0105jungos tre\u010Diasis b\u016brys, vienijantis motyvuotus pilie\u010Dius i\u0161 visos Lietuvos, pasiry\u017Eusius stiprinti \u0161alies gynybin\u012F paj\u0117gum\u0105 ir pilietin\u012F s\u0105moningum\u0105.",
     "p2": "M\u016Bs\u0173 b\u016brys yra Lietuvos \u0161auli\u0173 s\u0105jungos dalis \u2013 savanori\u0161kos sukarintos pilietin\u0117s savigynos organizacijos, veikian\u010Dios nuo 1919 met\u0173. \u0160auli\u0173 s\u0105junga yra viena seniausi\u0173 ir did\u017Eiausi\u0173 Lietuvos gynybini\u0173 organizacij\u0173.",
-    "p3": "B\u016bryje telkiame \u012Fvairi\u0173 profesij\u0173 ir patir\u010Di\u0173 \u017Emones, kuriuos jungia bendra vertyb\u0117 \u2013 pasiry\u017Eimas ginti savo kra\u0161t\u0105 ir bendruomen\u0119."
+    "p3": "B\u016bryje telkiame \u012Fvairi\u0173 profesij\u0173 ir patir\u010Di\u0173 \u017Emones, kuriuos jungia bendra vertyb\u0117 \u2013 pasiry\u017Eimas ginti savo kra\u0161t\u0105 ir bendruomen\u0119.",
+    "p4": "Būrio veiklą organizuoja ir remia VšĮ Trečiasis būrys (juridinio asmens kodas 307633723) – ne pelno siekianti viešoji įstaiga, turinti paramos gavėjo statusą. Įstaiga administruoja gautą paramą ir ją naudoja tik įstatuose numatytiems visuomenei naudingiems tikslams: narių mokymams, pirmosios pagalbos ir apsaugos priemonėms, pilietinio švietimo renginiams."
+  },
+  "programs": {
+    "title": "Veikla ir programos",
+    "subtitle": "Ką darome kiekvieną mėnesį",
+    "items": {
+      "ceremonies": {
+        "title": "Garbės sargyba ir ceremonijos",
+        "description": "Kaip Garbės sargybos kuopos būrys dalyvaujame valstybinių švenčių ir atmintinų datų minėjimuose Vilniuje: vėliavos pakėlimo ceremonijose, žuvusiųjų už Lietuvos laisvę pagerbimo renginiuose."
+      },
+      "training": {
+        "title": "Karinis ir taktinis rengimas",
+        "description": "Reguliarios pratybos ir mokymai: taktika, topografija, ryšiai, saugus elgesys su ginklu. Dalyvaujame bendrose pratybose su kitais šaulių daliniais ir Lietuvos kariuomene."
+      },
+      "medical": {
+        "title": "Pirmosios pagalbos mokymai",
+        "description": "Nariai mokosi taktinės ir civilinės pirmosios pagalbos – kraujavimo stabdymo, nukentėjusiųjų gelbėjimo ir transportavimo. Įgytas žinias perduodame bendruomenei."
+      },
+      "drones": {
+        "title": "Dronai ir situacinis vaizdas",
+        "description": "Ugdome bepiločių orlaivių operatorių ir situacinio vaizdo sistemų (ATAK) naudojimo kompetencijas. Šie įgūdžiai naudingi ir civilinei saugai, pavyzdžiui, dingusių asmenų paieškai."
+      },
+      "education": {
+        "title": "Pilietinis švietimas",
+        "description": "Organizuojame paskaitas ir susitikimus apie pasirengimą krizėms, civilinę saugą ir informacinį atsparumą, bendradarbiaujame su mokyklomis ir bendruomenėmis."
+      },
+      "community": {
+        "title": "Pagalba bendruomenei",
+        "description": "Kartu su institucijomis savanoriaujame viešosios tvarkos užtikrinimo, paieškos ir gelbėjimo bei renginių saugos veiklose."
+      }
+    },
+    "projectsTitle": "Projektai",
+    "projects": {
+      "project1": {
+        "title": "Pirmosios pagalbos rinkiniai kiekvienam nariui",
+        "period": "2026",
+        "status": "Vykdomas",
+        "description": "Iš paramos lėšų įsigyjame individualius pirmosios pagalbos rinkinius ir organizuojame jų naudojimo mokymus visiems būrio nariams."
+      },
+      "project2": {
+        "title": "Dronų ir ryšių pajėgumų plėtra",
+        "period": "2026",
+        "status": "Vykdomas",
+        "description": "Rengiame bepiločių orlaivių operatorius, diegiame situacinio vaizdo sistemą ir ryšių įrangą, kad būrys galėtų veikti kartu su kitais daliniais."
+      },
+      "project3": {
+        "title": "Atviri pirmosios pagalbos užsiėmimai visuomenei",
+        "period": "2027",
+        "status": "Planuojamas",
+        "description": "Nemokami praktiniai užsiėmimai Vilniaus gyventojams: kraujavimo stabdymas, gaivinimas, pasirengimas krizėms namuose."
+      }
+    }
   },
   "mission": {
     "title": "Misija ir tikslai",
@@ -45,7 +98,7 @@
     "step2": {
       "number": "02",
       "title": "Susisiek su mumis",
-      "description": "Para\u0161yk mums el. pa\u0161tu arba paskambink \u2013 atsakysime \u012F visus klausimus apie b\u016brio veikl\u0105."
+      "description": "Para\u0161yk mums el. pa\u0161tu arba u\u017Epildyk anket\u0105 \u2013 atsakysime \u012F visus klausimus apie b\u016brio veikl\u0105."
     },
     "step3": {
       "number": "03",
@@ -75,6 +128,10 @@
       "title": "Verslo parama",
       "description": "Jeigu atstovaujate verslui ir norite prisid\u0117ti prie m\u016Bs\u0173 veikl\u0173 \u2013 galima derinti atskiru susitarimu. Parama gali b\u016bti tiek finansin\u0117, tiek materialin\u0117."
     },
+    "usage": {
+      "title": "Kam naudojama parama",
+      "description": "Visa parama naudojama tik būrio veiklai: narių mokymams ir pratyboms, pirmosios pagalbos, apsaugos ir ryšių priemonėms, pilietinio švietimo renginiams. Paramos gavėjo ataskaitas teikiame VMI."
+    },
     "details": {
       "title": "Rekvizitai",
       "recipient": { "label": "Gav\u0117jas", "value": "V\u0161\u012E Tre\u010Diasis b\u016brys" },
@@ -85,10 +142,11 @@
     }
   },
   "video": {
-    "title": "M\u016Bs\u0173 veikla"
+    "title": "Vaizdo įrašas"
   },
   "gallery": {
-    "title": "Galerija"
+    "title": "Galerija",
+    "photoAlt": "Viesulų būrio veikla – nuotrauka {n}"
   },
   "contact": {
     "title": "Tapk Viesul\u0173 nariu",
@@ -114,6 +172,9 @@
   },
   "footer": {
     "rights": "Visos teis\u0117s saugomos.",
-    "lss": "Lietuvos \u0161auli\u0173 s\u0105junga"
+    "lss": "Lietuvos \u0161auli\u0173 s\u0105junga",
+    "code": "Juridinio asmens kodas: 307633723",
+    "status": "Ne pelno siekianti viešoji įstaiga, paramos gavėja",
+    "address": "Algirdo g. 85, LT-03209 Vilnius, Lietuva"
   }
 }

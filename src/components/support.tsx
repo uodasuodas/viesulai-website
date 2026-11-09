@@ -46,6 +46,13 @@ export function Support() {
           ))}
         </div>
 
+        <div className="mt-12 max-w-2xl mx-auto">
+          <h3 className="font-display text-xl text-bone mb-3 uppercase tracking-wide">
+            {t("usage.title")}
+          </h3>
+          <p className="text-bone/60 leading-relaxed">{t("usage.description")}</p>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

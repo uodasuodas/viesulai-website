@@ -2,6 +2,7 @@
   "nav": {
     "about": "About us",
     "mission": "Mission",
+    "programs": "Activities",
     "join": "Join us",
     "support": "Support",
     "gallery": "Gallery",
@@ -16,7 +17,59 @@
     "title": "About us",
     "p1": "\"Viesulai\" is the third squad of the Lithuanian Riflemen's Union, uniting motivated citizens from across Lithuania who are committed to strengthening the country's defense capability and civic awareness.",
     "p2": "Our squad is part of the Lithuanian Riflemen's Union – a voluntary paramilitary civic self-defense organization active since 1919. The Riflemen's Union is one of the oldest and largest defense organizations in Lithuania.",
-    "p3": "We bring together people of various professions and backgrounds, united by a shared value – the determination to defend our country and community."
+    "p3": "We bring together people of various professions and backgrounds, united by a shared value – the determination to defend our country and community.",
+    "p4": "The squad's activities are organized and supported by VšĮ Trečiasis būrys (legal entity code 307633723) – a non-profit public institution with registered charity (paramos gavėjas) status. It manages the donations it receives and uses them only for the public-benefit purposes set out in its statutes: member training, first aid and protective equipment, and civic education events."
+  },
+  "programs": {
+    "title": "Activities and programs",
+    "subtitle": "What we do every month",
+    "items": {
+      "ceremonies": {
+        "title": "Honor guard and ceremonies",
+        "description": "As a squad of the Honor Guard company, we take part in national holidays and commemorations in Vilnius: flag-raising ceremonies and events honoring those who died for Lithuania's freedom."
+      },
+      "training": {
+        "title": "Military and tactical training",
+        "description": "Regular exercises and courses: tactics, land navigation, communications, and safe weapon handling. We train together with other Riflemen's Union units and the Lithuanian Armed Forces."
+      },
+      "medical": {
+        "title": "First aid training",
+        "description": "Members learn tactical and civilian first aid – bleeding control, casualty rescue, and evacuation – and pass this knowledge on to the community."
+      },
+      "drones": {
+        "title": "Drones and situational awareness",
+        "description": "We train drone operators and users of situational awareness systems (ATAK). These skills are also used for civil protection, such as searches for missing persons."
+      },
+      "education": {
+        "title": "Civic education",
+        "description": "We organize talks and meetings on crisis preparedness, civil protection, and resilience to disinformation, working with schools and local communities."
+      },
+      "community": {
+        "title": "Community support",
+        "description": "Together with public institutions, we volunteer in public order, search and rescue, and event safety activities."
+      }
+    },
+    "projectsTitle": "Projects",
+    "projects": {
+      "project1": {
+        "title": "First aid kits for every member",
+        "period": "2026",
+        "status": "Ongoing",
+        "description": "Using donations, we purchase individual first aid kits and run training on how to use them for all squad members."
+      },
+      "project2": {
+        "title": "Drone and communications capability",
+        "period": "2026",
+        "status": "Ongoing",
+        "description": "We train drone operators and deploy a situational awareness system and communications equipment so the squad can operate alongside other units."
+      },
+      "project3": {
+        "title": "Open first aid sessions for the public",
+        "period": "2027",
+        "status": "Planned",
+        "description": "Free hands-on sessions for Vilnius residents: bleeding control, CPR, and household crisis preparedness."
+      }
+    }
   },
   "mission": {
     "title": "Mission and goals",
@@ -45,7 +98,7 @@
     "step2": {
       "number": "02",
       "title": "Contact us",
-      "description": "Write us an email or call – we'll answer all your questions about our squad's activities."
+      "description": "Write us an email or fill out the form – we'll answer all your questions about our squad's activities."
     },
     "step3": {
       "number": "03",
@@ -75,6 +128,10 @@
       "title": "Business support",
       "description": "If you represent a business and wish to contribute to our activities – we can arrange individual agreements. Support can be both financial and material."
     },
+    "usage": {
+      "title": "How donations are used",
+      "description": "All donations go only to the squad's activities: member training and exercises, first aid, protective and communications equipment, and civic education events. We file donation recipient reports with the State Tax Inspectorate (VMI)."
+    },
     "details": {
       "title": "Payment details",
       "recipient": { "label": "Recipient", "value": "VšĮ Trečiasis būrys" },
@@ -85,10 +142,11 @@
     }
   },
   "video": {
-    "title": "Our activities"
+    "title": "Video"
   },
   "gallery": {
-    "title": "Gallery"
+    "title": "Gallery",
+    "photoAlt": "Viesulai squad activities – photo {n}"
   },
   "contact": {
     "title": "Join the Viesulai squad",
@@ -114,6 +172,9 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "lss": "Lithuanian Riflemen's Union"
+    "lss": "Lithuanian Riflemen's Union",
+    "code": "Legal entity code: 307633723",
+    "status": "Non-profit public institution, registered charity",
+    "address": "Algirdo g. 85, LT-03209 Vilnius, Lithuania"
   }
 }

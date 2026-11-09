@@ -8,9 +8,10 @@ import { LanguageSwitcher } from "./language-switcher";
 const navLinks = [
   { href: "#about", key: "about" },
   { href: "#mission", key: "mission" },
+  { href: "#programs", key: "programs" },
+  { href: "#gallery", key: "gallery" },
   { href: "#join", key: "join" },
   { href: "#support", key: "support" },
-  { href: "#gallery", key: "gallery" },
   { href: "#contact", key: "contact" },
 ] as const;
 

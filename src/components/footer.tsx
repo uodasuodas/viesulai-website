@@ -25,6 +25,17 @@ export function Footer() {
               {t("lss")}
             </span>
           </div>
+          <address className="not-italic text-center md:text-left text-bone/50 text-sm space-y-1">
+            <p className="text-bone/80">Trečiasis būrys, VšĮ</p>
+            <p>{t("code")}</p>
+            <p>{t("status")}</p>
+            <p>{t("address")}</p>
+            <p>
+              <a href="mailto:tevyneslabui@treciasisburys.lt" className="hover:text-sand transition-colors">
+                tevyneslabui@treciasisburys.lt
+              </a>
+            </p>
+          </address>
           <p className="text-bone/30 text-sm">
             &copy; {new Date().getFullYear()} Trečiasis būrys, VšĮ. {t("rights")}
           </p>

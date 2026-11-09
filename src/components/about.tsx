@@ -32,6 +32,7 @@ export function About() {
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
+          <p>{t("p4")}</p>
         </motion.div>
       </div>
     </section>
