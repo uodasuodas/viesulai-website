@@ -16,11 +16,12 @@
     "p1": "\u201EViesulai\u201C \u2013 tai Lietuvos \u0161auli\u0173 s\u0105jungos tre\u010Diasis b\u016brys, vienijantis motyvuotus pilie\u010Dius i\u0161 visos Lietuvos, pasiry\u017Eusius stiprinti \u0161alies gynybin\u012F paj\u0117gum\u0105 ir pilietin\u012F s\u0105moningum\u0105.",
     "p2": "M\u016Bs\u0173 b\u016brys yra Lietuvos \u0161auli\u0173 s\u0105jungos dalis \u2013 savanori\u0161kos sukarintos pilietin\u0117s savigynos organizacijos, veikian\u010Dios nuo 1919 met\u0173. \u0160auli\u0173 s\u0105junga yra viena seniausi\u0173 ir did\u017Eiausi\u0173 Lietuvos gynybini\u0173 organizacij\u0173.",
     "p3": "B\u016bryje telkiame \u012Fvairi\u0173 profesij\u0173 ir patir\u010Di\u0173 \u017Emones, kuriuos jungia bendra vertyb\u0117 \u2013 pasiry\u017Eimas ginti savo kra\u0161t\u0105 ir bendruomen\u0119.",
-    "p4": "Būrio veiklą organizuoja ir remia VšĮ Trečiasis būrys (juridinio asmens kodas 307633723) – ne pelno siekianti viešoji įstaiga, turinti paramos gavėjo statusą. Įstaiga administruoja gautą paramą ir ją naudoja tik įstatuose numatytiems visuomenei naudingiems tikslams: narių mokymams, pirmosios pagalbos ir apsaugos priemonėms, pilietinio švietimo renginiams."
+    "p4": "Būrio veiklą organizuoja ir remia VšĮ Trečiasis būrys (juridinio asmens kodas 307633723) – ne pelno siekianti viešoji įstaiga, turinti paramos gavėjo statusą. Gautą paramą ji naudoja tik įstatuose numatytiems visuomenei naudingiems tikslams."
   },
   "programs": {
     "title": "Veikla ir programos",
     "subtitle": "Ką darome kiekvieną mėnesį",
+    "more": "Plačiau apie veiklą",
     "items": {
       "ceremonies": {
         "title": "Garbės sargyba ir ceremonijos",
@@ -109,6 +110,7 @@
       "description": "Dalyvuok pratybose, mokymosi u\u017Esi\u0117mimuose ir b\u016brio renginiuose kartu su komanda."
     },
     "cta": "Tapk \u0161auliu",
+    "formCta": "Užpildyk anketą",
     "ctaUrl": "https://www.sauliusajunga.lt/tapk-sauliu/"
   },
   "support": {
@@ -120,7 +122,7 @@
     },
     "transfer": {
       "title": "Parama pavedimu",
-      "description": "Perveskite param\u0105 \u012F V\u0160\u012E TRE\u010CIASIS B\u016aRYS banko s\u0105skait\u0105 LT727300010201946164. Mok\u0117jimo paskirtis: PARAMA."
+      "description": "Perveskite paramą į žemiau nurodytą banko sąskaitą. Mokėjimo paskirtis: PARAMA."
     },
     "business": {
       "title": "Verslo parama",
@@ -166,7 +168,8 @@
     },
     "info": {
       "company": "Tre\u010Diasis b\u016brys, V\u0161\u012E",
-      "code": "\u012Emon\u0117s kodas: 307633723",
+      "code": "Juridinio asmens kodas: 307633723",
+      "general": "Bendrais, paramos ir bendradarbiavimo klausimais rašykite:",
       "email": "tevyneslabui@treciasisburys.lt"
     }
   },

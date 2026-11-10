@@ -3,9 +3,53 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 const programs = ["ceremonies", "training", "medical", "drones", "education", "community"] as const;
 const projects = ["project1", "project2", "project3"] as const;
+
+// Home page summary: program titles only, details on /veikla/
+export function ProgramsTeaser() {
+  const t = useTranslations("programs");
+
+  return (
+    <section className="py-24 md:py-32 bg-olive">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <h2 className="font-display text-4xl md:text-5xl text-bone mb-4 uppercase tracking-wide">
+            {t("title")}
+          </h2>
+          <p className="text-bone/50 text-lg">{t("subtitle")}</p>
+          <div className="w-16 h-0.5 bg-sand mx-auto mt-6" />
+        </motion.div>
+
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {programs.map((key) => (
+            <li
+              key={key}
+              className="border border-bone/10 px-6 py-5 font-display text-bone uppercase tracking-wide"
+            >
+              {t(`items.${key}.title`)}
+            </li>
+          ))}
+        </ul>
+
+        <Link
+          href="/veikla/"
+          className="inline-block mt-12 border-2 border-sand text-sand hover:bg-sand hover:text-dark px-8 py-4 text-lg font-semibold tracking-wide uppercase transition-colors"
+        >
+          {t("more")}
+        </Link>
+      </div>
+    </section>
+  );
+}
 
 // photos: program key -> image path, collected from public/images/programs at build time (see page.tsx)
 export function Programs({ photos }: { photos: Record<string, string> }) {

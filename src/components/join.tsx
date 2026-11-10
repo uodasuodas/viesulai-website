@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const steps = ["step1", "step2", "step3", "step4"] as const;
 
@@ -57,7 +58,7 @@ export function Join() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-12"
+          className="flex flex-wrap justify-center gap-4 mt-12"
         >
           <a
             href={t("ctaUrl")}
@@ -67,6 +68,12 @@ export function Join() {
           >
             {t("cta")}
           </a>
+          <Link
+            href="/kontaktai/"
+            className="inline-block border-2 border-bone/30 text-bone hover:border-sand hover:text-sand px-8 py-4 text-lg font-semibold tracking-wide uppercase transition-colors"
+          >
+            {t("formCta")}
+          </Link>
         </motion.div>
       </div>
     </section>

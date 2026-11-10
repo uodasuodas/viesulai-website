@@ -16,11 +16,12 @@
     "p1": "\"Viesulai\" is the third squad of the Lithuanian Riflemen's Union, uniting motivated citizens from across Lithuania who are committed to strengthening the country's defense capability and civic awareness.",
     "p2": "Our squad is part of the Lithuanian Riflemen's Union – a voluntary paramilitary civic self-defense organization active since 1919. The Riflemen's Union is one of the oldest and largest defense organizations in Lithuania.",
     "p3": "We bring together people of various professions and backgrounds, united by a shared value – the determination to defend our country and community.",
-    "p4": "The squad's activities are organized and supported by VšĮ Trečiasis būrys (legal entity code 307633723) – a non-profit public institution with registered charity (paramos gavėjas) status. It manages the donations it receives and uses them only for the public-benefit purposes set out in its statutes: member training, first aid and protective equipment, and civic education events."
+    "p4": "The squad's activities are organized and supported by VšĮ Trečiasis būrys (legal entity code 307633723) – a non-profit public institution with registered charity (paramos gavėjas) status. It uses donations only for the public-benefit purposes set out in its statutes."
   },
   "programs": {
     "title": "Activities and programs",
     "subtitle": "What we do every month",
+    "more": "More about our activities",
     "items": {
       "ceremonies": {
         "title": "Honor guard and ceremonies",
@@ -109,6 +110,7 @@
       "description": "Participate in exercises, training sessions, and squad events together with the team."
     },
     "cta": "Become a rifleman",
+    "formCta": "Fill out the form",
     "ctaUrl": "https://www.sauliusajunga.lt/tapk-sauliu/"
   },
   "support": {
@@ -120,7 +122,7 @@
     },
     "transfer": {
       "title": "Bank transfer",
-      "description": "Transfer your support to VšĮ TREČIASIS BŪRYS bank account LT727300010201946164. Payment purpose: PARAMA (Support)."
+      "description": "Transfer your support to the bank account listed below. Payment purpose: PARAMA (Support)."
     },
     "business": {
       "title": "Business support",
@@ -166,7 +168,8 @@
     },
     "info": {
       "company": "Trečiasis būrys, VšĮ",
-      "code": "Company code: 307633723",
+      "code": "Legal entity code: 307633723",
+      "general": "For general, donation and partnership enquiries, write to:",
       "email": "tevyneslabui@treciasisburys.lt"
     }
   },
