@@ -4,13 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 import { Video } from "./video";
 
 const AUTOPLAY_MS = 4000;
 const SWIPE_PX = 40;
 
-// Photo paths are collected from public/images/gallery at build time (see lib/images.ts)
-export function Gallery({ photos }: { photos: string[] }) {
+// Photo paths are collected from public/images/gallery at build time (see lib/images.ts).
+// Teaser (home page) links to the gallery page instead of showing the video.
+export function Gallery({ photos, teaser = false }: { photos: string[]; teaser?: boolean }) {
   const t = useTranslations("gallery");
   const count = photos.length;
   const [index, setIndex] = useState(0);
@@ -117,9 +119,20 @@ export function Gallery({ photos }: { photos: string[] }) {
           </>
         )}
 
-        <div className="mt-16">
-          <Video />
-        </div>
+        {teaser ? (
+          <div className="mt-12 text-center">
+            <Link
+              href="/galerija/"
+              className="inline-block border-2 border-sand text-sand hover:bg-sand hover:text-dark px-8 py-4 text-lg font-semibold tracking-wide uppercase transition-colors"
+            >
+              {t("more")}
+            </Link>
+          </div>
+        ) : (
+          <div className="mt-16">
+            <Video />
+          </div>
+        )}
       </div>
     </section>
   );

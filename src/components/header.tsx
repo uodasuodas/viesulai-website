@@ -9,6 +9,7 @@ import { LanguageSwitcher } from "./language-switcher";
 const links = [
   { href: "/apie/", key: "about" },
   { href: "/veikla/", key: "programs" },
+  { href: "/galerija/", key: "gallery" },
   { href: "/tapk-nariu/", key: "join" },
   { href: "/parama/", key: "support" },
   { href: "/kontaktai/", key: "contact" },
@@ -64,7 +65,7 @@ export function Header() {
           Viesulai
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {links.map((link) => (
             <Link
               key={link.key}
@@ -78,7 +79,7 @@ export function Header() {
         </div>
 
         <button
-          className="md:hidden text-bone p-2"
+          className="lg:hidden text-bone p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
           aria-expanded={menuOpen}
@@ -107,7 +108,7 @@ export function Header() {
       <div
         id="mobile-menu"
         inert={!menuOpen}
-        className={`md:hidden grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
+        className={`lg:hidden grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
           menuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >

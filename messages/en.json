@@ -2,6 +2,7 @@
   "nav": {
     "about": "About us",
     "programs": "Activities",
+    "gallery": "Gallery",
     "join": "Join us",
     "support": "Support",
     "contact": "Contact"
@@ -146,6 +147,7 @@
   },
   "gallery": {
     "title": "Gallery",
+    "more": "Full gallery",
     "photoAlt": "Viesulai squad activities – photo {n}",
     "prev": "Previous photo",
     "next": "Next photo"

@@ -16,7 +16,7 @@ export default async function HomePage({
     <main>
       <Hero />
       <ProgramsTeaser />
-      <Gallery photos={galleryPhotos} />
+      <Gallery photos={galleryPhotos} teaser />
     </main>
   );
 }

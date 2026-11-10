@@ -2,6 +2,7 @@
   "nav": {
     "about": "Kas mes",
     "programs": "Veikla",
+    "gallery": "Galerija",
     "join": "Tapk nariu",
     "support": "Paremk",
     "contact": "Kontaktai"
@@ -146,6 +147,7 @@
   },
   "gallery": {
     "title": "Galerija",
+    "more": "Visa galerija",
     "photoAlt": "Viesulų būrio veikla – nuotrauka {n}",
     "prev": "Ankstesnė nuotrauka",
     "next": "Kita nuotrauka"
