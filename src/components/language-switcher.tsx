@@ -6,7 +6,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { locales } from "@/i18n/config";
 
 // Switches language while staying on the same page
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ onSelect }: { onSelect?: () => void }) {
   const locale = useLocale();
   const pathname = usePathname();
 
@@ -18,6 +18,7 @@ export function LanguageSwitcher() {
           <Link
             href={pathname}
             locale={l}
+            onClick={onSelect}
             className={`transition-colors ${
               locale === l ? "text-sand font-semibold" : "text-bone/60 hover:text-bone"
             }`}

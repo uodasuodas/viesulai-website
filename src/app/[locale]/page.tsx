@@ -1,7 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/hero";
 import { ProgramsTeaser } from "@/components/programs";
-import { Video } from "@/components/video";
 import { Gallery } from "@/components/gallery";
 import { galleryPhotos } from "@/lib/images";
 
@@ -17,8 +16,7 @@ export default async function HomePage({
     <main>
       <Hero />
       <ProgramsTeaser />
-      {galleryPhotos.length > 0 && <Gallery photos={galleryPhotos} />}
-      <Video />
+      <Gallery photos={galleryPhotos} />
     </main>
   );
 }
