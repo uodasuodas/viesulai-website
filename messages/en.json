@@ -1,12 +1,10 @@
 {
   "nav": {
     "about": "About us",
-    "mission": "Mission",
     "programs": "Activities",
     "join": "Join us",
     "support": "Support",
-    "gallery": "Gallery",
-    "contact": "Apply"
+    "contact": "Contact"
   },
   "hero": {
     "headline": "Viesulai",
@@ -146,7 +144,9 @@
   },
   "gallery": {
     "title": "Gallery",
-    "photoAlt": "Viesulai squad activities – photo {n}"
+    "photoAlt": "Viesulai squad activities – photo {n}",
+    "prev": "Previous photo",
+    "next": "Next photo"
   },
   "contact": {
     "title": "Join the Viesulai squad",

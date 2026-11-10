@@ -1,12 +1,10 @@
 {
   "nav": {
     "about": "Kas mes",
-    "mission": "Misija",
     "programs": "Veikla",
     "join": "Tapk nariu",
     "support": "Paremk",
-    "gallery": "Galerija",
-    "contact": "Anketa"
+    "contact": "Kontaktai"
   },
   "hero": {
     "headline": "Viesulai",
@@ -146,7 +144,9 @@
   },
   "gallery": {
     "title": "Galerija",
-    "photoAlt": "Viesulų būrio veikla – nuotrauka {n}"
+    "photoAlt": "Viesulų būrio veikla – nuotrauka {n}",
+    "prev": "Ankstesnė nuotrauka",
+    "next": "Kita nuotrauka"
   },
   "contact": {
     "title": "Tapk Viesul\u0173 nariu",

@@ -4,6 +4,8 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Oswald, Inter } from "next/font/google";
 import { routing } from "@/i18n/routing";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const oswald = Oswald({
   subsets: ["latin", "latin-ext"],
@@ -64,7 +66,9 @@ export default async function LocaleLayout({
     >
       <body className="font-body bg-dark text-bone antialiased">
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

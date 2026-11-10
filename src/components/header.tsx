@@ -3,23 +3,26 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link, usePathname } from "@/i18n/routing";
 import { LanguageSwitcher } from "./language-switcher";
 
-const navLinks = [
-  { href: "#about", key: "about" },
-  { href: "#mission", key: "mission" },
-  { href: "#programs", key: "programs" },
-  { href: "#gallery", key: "gallery" },
-  { href: "#join", key: "join" },
-  { href: "#support", key: "support" },
-  { href: "#contact", key: "contact" },
+const links = [
+  { href: "/apie/", key: "about" },
+  { href: "/veikla/", key: "programs" },
+  { href: "/tapk-nariu/", key: "join" },
+  { href: "/parama/", key: "support" },
+  { href: "/kontaktai/", key: "contact" },
 ] as const;
 
-export function Header({ hasGallery }: { hasGallery: boolean }) {
+const stripSlash = (path: string) => path.replace(/\/$/, "");
+
+export function Header() {
   const t = useTranslations("nav");
+  const pathname = stripSlash(usePathname());
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const links = hasGallery ? navLinks : navLinks.filter((l) => l.key !== "gallery");
+  const linkClass = (href: string) =>
+    stripSlash(href) === pathname ? "text-sand" : "text-bone/80 hover:text-sand";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -36,8 +39,8 @@ export function Header({ hasGallery }: { hasGallery: boolean }) {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="flex items-center gap-3 font-display text-bone text-2xl tracking-[0.15em] uppercase"
         >
           <Image
@@ -48,17 +51,17 @@ export function Header({ hasGallery }: { hasGallery: boolean }) {
             className="h-10 w-auto"
           />
           Viesulai
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <a
+            <Link
               key={link.key}
               href={link.href}
-              className="text-bone/80 hover:text-sand text-sm tracking-wide uppercase transition-colors"
+              className={`${linkClass(link.href)} text-sm tracking-wide uppercase transition-colors`}
             >
               {t(link.key)}
-            </a>
+            </Link>
           ))}
           <LanguageSwitcher />
         </div>
@@ -92,14 +95,14 @@ export function Header({ hasGallery }: { hasGallery: boolean }) {
         <div className="md:hidden bg-dark/95 backdrop-blur-sm border-t border-bone/10">
           <div className="px-6 py-6 flex flex-col gap-5">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.key}
                 href={link.href}
-                className="text-bone/80 hover:text-sand text-lg uppercase transition-colors"
+                className={`${linkClass(link.href)} text-lg uppercase transition-colors`}
                 onClick={() => setMenuOpen(false)}
               >
                 {t(link.key)}
-              </a>
+              </Link>
             ))}
             <LanguageSwitcher />
           </div>

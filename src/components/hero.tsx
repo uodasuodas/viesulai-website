@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -63,15 +64,18 @@ export function Hero() {
           {t("subheadline")}
         </motion.p>
 
-        <motion.a
-          href="#join"
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="inline-block border-2 border-sand text-sand hover:bg-sand hover:text-dark px-8 py-4 text-lg font-semibold tracking-wide uppercase transition-colors"
         >
-          {t("cta")}
-        </motion.a>
+          <Link
+            href="/tapk-nariu/"
+            className="inline-block border-2 border-sand text-sand hover:bg-sand hover:text-dark px-8 py-4 text-lg font-semibold tracking-wide uppercase transition-colors"
+          >
+            {t("cta")}
+          </Link>
+        </motion.div>
       </div>
 
       <motion.div

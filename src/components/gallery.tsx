@@ -1,35 +1,36 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-// Photo paths are collected from public/images/gallery at build time (see page.tsx)
+const AUTOPLAY_MS = 5000;
+
+// Photo paths are collected from public/images/gallery at build time (see lib/images.ts)
 export function Gallery({ photos }: { photos: string[] }) {
   const t = useTranslations("gallery");
-  const [active, setActive] = useState<number | null>(null);
+  const [index, setIndex] = useState(0);
+  const go = (step: number) => setIndex((i) => (i + step + photos.length) % photos.length);
 
+  // Restarts on every change, so manual navigation also resets the timer
   useEffect(() => {
-    if (active === null) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setActive(null);
-      if (e.key === "ArrowRight") setActive((active + 1) % photos.length);
-      if (e.key === "ArrowLeft") setActive((active - 1 + photos.length) % photos.length);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [active, photos.length]);
+    const id = setTimeout(() => setIndex((i) => (i + 1) % photos.length), AUTOPLAY_MS);
+    return () => clearTimeout(id);
+  }, [index, photos.length]);
+
+  const arrowClass =
+    "absolute top-1/2 -translate-y-1/2 z-10 w-11 h-11 bg-dark/60 hover:bg-dark/90 text-bone text-2xl transition-colors";
 
   return (
     <section id="gallery" className="py-24 md:py-32 bg-dark">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="font-display text-4xl md:text-5xl text-bone mb-4 uppercase tracking-wide">
             {t("title")}
@@ -37,43 +38,52 @@ export function Gallery({ photos }: { photos: string[] }) {
           <div className="w-16 h-0.5 bg-sand mx-auto mt-6" />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-          {photos.map((src, i) => (
-              <motion.button
-                key={src}
-                type="button"
-                onClick={() => setActive(i)}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: (i % 6) * 0.08 }}
-                className="relative aspect-[4/3] overflow-hidden group cursor-pointer"
-              >
-                <Image
-                  src={src}
-                  alt={t("photoAlt", { n: i + 1 })}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                />
-              </motion.button>
-            ))}
-        </div>
-      </div>
-
-      {active !== null && (
         <div
-          onClick={() => setActive(null)}
-          className="fixed inset-0 z-[60] bg-dark/95 flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
+          className="relative aspect-[4/3] md:aspect-video bg-dark-light border border-bone/10 overflow-hidden"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "ArrowRight") go(1);
+            if (e.key === "ArrowLeft") go(-1);
+          }}
         >
-          <div className="relative w-full h-full">
-            <Image src={photos[active]} alt={t("photoAlt", { n: active + 1 })} fill className="object-contain" sizes="100vw" />
-          </div>
-          <span className="absolute bottom-4 text-bone/50 text-sm tracking-widest">
-            {active + 1} / {photos.length}
-          </span>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              onDragEnd={(_, info) => {
+                if (info.offset.x < -50) go(1);
+                if (info.offset.x > 50) go(-1);
+              }}
+              className="absolute inset-0 cursor-grab active:cursor-grabbing"
+            >
+              <Image
+                src={photos[index]}
+                alt={t("photoAlt", { n: index + 1 })}
+                fill
+                draggable={false}
+                className="object-contain"
+                sizes="(max-width: 896px) 100vw, 896px"
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          <button type="button" onClick={() => go(-1)} aria-label={t("prev")} className={`${arrowClass} left-3`}>
+            ‹
+          </button>
+          <button type="button" onClick={() => go(1)} aria-label={t("next")} className={`${arrowClass} right-3`}>
+            ›
+          </button>
         </div>
-      )}
+
+        <p className="mt-4 text-center text-bone/50 text-sm tracking-widest">
+          {index + 1} / {photos.length}
+        </p>
+      </div>
     </section>
   );
 }
