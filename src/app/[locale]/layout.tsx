@@ -33,12 +33,12 @@ export async function generateMetadata({
     lt: {
       title: "Viesulai \u2013 Lietuvos \u0161auli\u0173 s\u0105jungos b\u016brys",
       description:
-        "Tre\u010Diasis b\u016brys \u201EViesulai\u201C \u2013 Lietuvos \u0161auli\u0173 s\u0105jungos padalinys Vilniuje. V\u0161\u012E Tre\u010Diasis b\u016brys \u2013 ne pelno siekianti paramos gav\u0117ja. Garb\u0117s sargyba, mokymai, pirmoji pagalba, pilietinis \u0161vietimas.",
+        "Tre\u010Diasis b\u016brys \u201EViesulai\u201C \u2013 Lietuvos \u0161auli\u0173 s\u0105jungos padalinys Vilniuje. V\u0161\u012E Tre\u010Diasis b\u016brys \u2013 ne pelno siekianti paramos gav\u0117ja. Mokymai, pirmoji pagalba, dronai, pilietinis \u0161vietimas.",
     },
     en: {
       title: "Viesulai – Lithuanian Riflemen's Union squad",
       description:
-        "Viesulai is a squad of the Lithuanian Riflemen's Union based in Vilnius, supported by VšĮ Trečiasis būrys, a non-profit registered charity. Honor guard, training, first aid, civic education.",
+        "Viesulai is a squad of the Lithuanian Riflemen's Union based in Vilnius, supported by VšĮ Trečiasis būrys, a non-profit registered charity. Training, first aid, drones, civic education.",
     },
   };
   return meta[locale] || meta.lt;

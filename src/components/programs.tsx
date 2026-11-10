@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 
-const programs = ["ceremonies", "training", "medical", "drones", "education", "community"] as const;
+const programs = ["training", "medical", "drones", "education", "community"] as const;
 const projects = ["project1", "project2", "project3"] as const;
 
 // Home page summary: program titles only, details on /veikla/
@@ -29,11 +29,12 @@ export function ProgramsTeaser() {
           <div className="w-16 h-0.5 bg-sand mx-auto mt-6" />
         </motion.div>
 
-        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* Flex wrap keeps an incomplete last row centered */}
+        <ul className="flex flex-wrap justify-center gap-4">
           {programs.map((key) => (
             <li
               key={key}
-              className="border border-bone/10 px-6 py-5 font-display text-bone uppercase tracking-wide"
+              className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] border border-bone/10 px-6 py-5 font-display text-bone uppercase tracking-wide"
             >
               {t(`items.${key}.title`)}
             </li>
@@ -72,7 +73,7 @@ export function Programs({ photos }: { photos: Record<string, string> }) {
           <div className="w-16 h-0.5 bg-sand mx-auto mt-6" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {programs.map((key, i) => (
             <motion.article
               key={key}
@@ -80,7 +81,7 @@ export function Programs({ photos }: { photos: Record<string, string> }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: (i % 3) * 0.15 }}
-              className="border border-bone/10 hover:border-sand/30 transition-colors"
+              className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] border border-bone/10 hover:border-sand/30 transition-colors"
             >
               {photos[key] && (
                 <div className="relative aspect-[4/3]">
